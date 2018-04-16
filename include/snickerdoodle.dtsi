@@ -43,6 +43,11 @@
 	};
 };
 
+&i2c0 {
+        clock-frequency = <400000>;
+        status = "okay";
+};
+
 &clkc {
 	ps-clk-frequency = <33333333>;
 };
