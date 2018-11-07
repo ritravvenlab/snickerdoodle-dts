@@ -13,6 +13,8 @@
         compatible = "krtkl,snickerdoodle", "xlnx,zynq-7000";
 
 	aliases {
+ 		i2c0 = &i2c0;
+		i2c1 = &i2c1;
 		serial0 = &uart0;
 		spi0 = &qspi;
 		spi1 = &spi1;
@@ -44,8 +46,12 @@
 };
 
 &i2c0 {
-        clock-frequency = <400000>;
-        status = "okay";
+	clock-frequency = <400000>;
+	status = "okay";
+};
+&i2c1 {
+	clock-frequency = <400000>;
+	status = "okay";
 };
 
 &clkc {
